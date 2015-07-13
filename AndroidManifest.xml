@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tarea.u3.herman.vargas"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="22" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="cl.inacap.tarea.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="cl.inacap.tarea.MenuActivity"
+            android:label="@string/title_activity_menu" >
+        </activity>
+        <activity
+            android:name="cl.inacap.tarea.AdminClienteActivity"
+            android:label="@string/title_activity_admin_cliente" >
+        </activity>
+        <activity
+            android:name="cl.inacap.tarea.EntregaPedidoActivity"
+            android:label="@string/title_activity_entrega_pedido" >
+        </activity>
+        <activity
+            android:name="cl.inacap.tarea.ResumenCajaActivity"
+            android:label="@string/title_activity_resumen_caja" >
+        </activity>
+        <activity
+            android:name="cl.inacap.tarea.AgregarClienteActivity"
+            android:label="@string/title_activity_agregar_cliente" >
+        </activity>
+        <activity
+            android:name="cl.inacap.tarea.ModificarClienteActivity"
+            android:label="@string/title_activity_modificar_cliente" >
+        </activity>
+        <activity
+            android:name="cl.inacap.tarea.UbicacionActivity"
+            android:label="@string/title_activity_ubicacion" >
+        </activity>
+    </application>
+
+</manifest>
