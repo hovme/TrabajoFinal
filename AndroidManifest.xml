@@ -7,6 +7,7 @@
     <uses-sdk
         android:minSdkVersion="15"
         android:targetSdkVersion="22" />
+
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
@@ -52,6 +53,10 @@
         <activity
             android:name="cl.inacap.tarea.UbicacionActivity"
             android:label="@string/title_activity_ubicacion" >
+        </activity>
+        <activity
+            android:name="cl.inacap.tarea.MiRutaActivity"
+            android:label="@string/title_activity_mi_ruta" >
         </activity>
     </application>
 

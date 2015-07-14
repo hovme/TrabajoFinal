@@ -17,5 +17,6 @@
     <string name="title_activity_agregar_cliente">AgregarClienteActivity</string>
     <string name="title_activity_modificar_cliente">ModificarClienteActivity</string>
     <string name="title_activity_ubicacion">UbicacionActivity</string>
+    <string name="title_activity_mi_ruta">MiRutaActivity</string>
 
 </resources>

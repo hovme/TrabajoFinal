@@ -36,7 +36,8 @@ public class BdSqliteHelper extends SQLiteOpenHelper {
       private String sql2 = "CREATE TABLE login ( " +idusuario+ " INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL,"+usuario+" TEXT,"+contrasena+" TEXT)";
 
       private final String INSERT_DB = "INSERT INTO LOGIN(idusuario, usuario, contrasena) VALUES(1,'herman','1234');";
-   
+      private final String INSERT_DB6 = "INSERT INTO LOGIN(idusuario, usuario, contrasena) VALUES(2,'juan','1234');";
+      
 
 	public BdSqliteHelper(Context context) {
 		super(context, database, null, version);
@@ -54,6 +55,7 @@ public class BdSqliteHelper extends SQLiteOpenHelper {
 		db.execSQL(INSERT_DB3);
 		db.execSQL(INSERT_DB4);
 		db.execSQL(INSERT_DB5);
+		db.execSQL(INSERT_DB6);
 		Log.i("SQLite","Se creo BD "+ database + " version "+ version);
 		
 	}

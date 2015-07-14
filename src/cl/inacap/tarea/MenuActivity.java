@@ -25,6 +25,8 @@ public class MenuActivity extends Activity {
 		Button btEntregaPedido = (Button)findViewById(R.id.btn_entregaPedido);
 		Button btResumCaja =(Button)findViewById(R.id.btn_resumenCaja);
 		Button btUbica =(Button)findViewById(R.id.btnUbicacion);
+		Button btMiRuta =(Button)findViewById(R.id.btnMiRuta);
+		
 		
 		btUbica.setOnClickListener(new OnClickListener() {
 			
@@ -36,6 +38,18 @@ public class MenuActivity extends Activity {
 				
 			}
 		});
+
+		btMiRuta.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				
+				Intent irRuta = new Intent(MenuActivity.this,MiRutaActivity.class);
+				MenuActivity.this.startActivity(irRuta);
+				
+			}
+		});
+
 		
 		btAdminCliente.setOnClickListener(new OnClickListener() {
 			
