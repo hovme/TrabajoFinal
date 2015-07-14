@@ -2,9 +2,7 @@ package cl.inacap.tarea;
 
 
 import cl.inacap.tarea.clases.BdSqlite;
-
 import cl.inacap.tarea.R;
-
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.DialogInterface;
@@ -29,7 +27,7 @@ public class MainActivity extends Activity {
 	private MiTareaAsincronaDialog tarea2;
 	private ProgressDialog pDialog;
 	final BdSqlite conn = new BdSqlite(MainActivity.this);
-	
+	private String idU =null; 
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -63,7 +61,8 @@ public class MainActivity extends Activity {
 				// se trae la pass desde la base de datos
 				String contrase = conn.validaUsuario(_usuario);
 				if(_pass.equals(contrase)){
-					
+				idU = conn.getIdUsuario(_usuario);	
+
 					pDialog = new ProgressDialog(MainActivity.this);
 					pDialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
 					pDialog.setMessage("Autenticando...");
@@ -160,7 +159,9 @@ public class MainActivity extends Activity {
     			pDialog.dismiss();
     			Toast.makeText(MainActivity.this, "Usuario autenticado", Toast.LENGTH_SHORT).show();
     			Intent i = new Intent(MainActivity.this,MenuActivity.class);
+    			i.putExtra("id", idU);
     			MainActivity.this.startActivity(i);
+    			 
     			
     		}
     	}

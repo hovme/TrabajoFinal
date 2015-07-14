@@ -50,6 +50,14 @@ public class BdSqlite {
 		cursor.close();
 		return password;				
 	}
+	public String getIdUsuario(String userName)
+	{
+		Cursor cursor=db.query("login", null, "usuario=?", new String[]{userName}, null, null, null);
+	    cursor.moveToFirst();
+		String id= cursor.getString(cursor.getColumnIndex("idusuario"));
+		cursor.close();
+		return id;				
+	}
 	public ArrayList<String> traerListaClientes(Cursor cursor)
 	{
 		ArrayList<String> listaDatos = new ArrayList<String>();

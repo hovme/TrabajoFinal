@@ -44,8 +44,14 @@ public class MenuActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				
+				Bundle traer = getIntent().getExtras();
+				String idU = traer.getString("id");
+					
 				Intent irRuta = new Intent(MenuActivity.this,MiRutaActivity.class);
+				irRuta.putExtra("id", idU);
 				MenuActivity.this.startActivity(irRuta);
+				
+				
 				
 			}
 		});

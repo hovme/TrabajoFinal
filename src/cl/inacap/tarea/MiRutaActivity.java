@@ -1,5 +1,6 @@
 package cl.inacap.tarea;
 import cl.inacap.tarea.R;
+
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMap.OnMapClickListener;
@@ -25,9 +26,13 @@ public class MiRutaActivity extends FragmentActivity implements OnMapClickListen
 
     private GoogleMap mMap; // Might be null if Google Play services APK is not available.
     private final LatLng PROD_FRESCOS = new LatLng(-33.3801113,-70.5411158);
+    
     private final LatLng Almacen_1 = new LatLng(-33.381706, -70.542736);
     private final LatLng Almacen_2 = new LatLng(-33.382942, -70.535322);
     private final LatLng Almacen_3 = new LatLng(-33.384859, -70.538777);
+    private final LatLng Almacen_4 = new LatLng(-33.380170, -70.541910);
+    private final LatLng Almacen_5 = new LatLng(-33.380416, -70.542612);
+    private final LatLng Almacen_6 = new LatLng(-33.380707, -70.543288);
 	public static final PolylineOptions POLILINEA = new PolylineOptions()
 							.add(new LatLng(-33.3801113,-70.5411158))
 							.add(new LatLng(-33.380604, -70.542736))
@@ -38,13 +43,24 @@ public class MiRutaActivity extends FragmentActivity implements OnMapClickListen
 						    .add(new LatLng(-33.385052, -70.539313))
 						    .add(new LatLng(-33.384864, -70.538804))
 						    .add(new LatLng(-33.382933, -70.535247));
-    
+	public static final PolylineOptions POLILINEA2 = new PolylineOptions()
+							.add(new LatLng(-33.380170, -70.541910))
+							.add(new LatLng(-33.380416, -70.542612))
+						    .add(new LatLng(-33.380707, -70.543288));
+	Bundle traer = getIntent().getExtras();
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mi_ruta);
         setUpMapIfNeeded();
+    	String idU = traer.getString("id");
+    	if(idU.equals("1")){
         drawPolilyne(POLILINEA);
+        }else{
+        	drawPolilyne(POLILINEA2);
+        }
+    	
         //mMap = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapa)).getMap();
         //mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(PROD_FRESCOS, 15));
     }
@@ -103,24 +119,49 @@ public class MiRutaActivity extends FragmentActivity implements OnMapClickListen
      * This should only be called once and when we are sure that {@link #mMap} is not null.
      */
     private void setUpMap() {
+    	
+    		
+	String idU = traer.getString("id");
+    	if(idU.equals("1")){
+    		mMap.addMarker(new MarkerOptions()
+            .position(Almacen_1)
+            .title("Tai Helao Juan")
+            .snippet("Completos y Sanguches artesanales")
+            .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_VIOLET)));
+            
+            mMap.addMarker(new MarkerOptions()
+            .position(Almacen_2)
+            .title("El Banco")
+            .snippet("Bar y Venta de licores")
+            .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+           
+            mMap.addMarker(new MarkerOptions()
+            .position(Almacen_3)
+            .title("La biblioteca")
+            .snippet("Bar y Cabaret")
+            .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+    		
+    	}else{
+		
         mMap.addMarker(new MarkerOptions()
-        .position(Almacen_1)
-        .title("Tai Helao Juan")
+        .position(Almacen_4)
+        .title("Soapiizaaaa")
         .snippet("Completos y Sanguches artesanales")
         .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_VIOLET)));
         
         mMap.addMarker(new MarkerOptions()
-        .position(Almacen_2)
-        .title("El Banco")
+        .position(Almacen_5)
+        .title("Donde la Lucha")
         .snippet("Bar y Venta de licores")
         .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
        
         mMap.addMarker(new MarkerOptions()
-        .position(Almacen_3)
-        .title("La biblioteca")
+        .position(Almacen_6)
+        .title("Un tramite")
         .snippet("Bar y Cabaret")
-        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));	
-    }
+        .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));	
+    		}
+    	}
 
     private void drawPolilyne(PolylineOptions options){
         Polyline polyline = mMap.addPolyline(options);	
