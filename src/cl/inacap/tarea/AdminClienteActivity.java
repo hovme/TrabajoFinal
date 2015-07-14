@@ -5,10 +5,10 @@ import java.util.ArrayList;
 import cl.inacap.tarea.clases.BdSqlite;
 import cl.inacap.tarea.clases.BdSqliteHelper;
 
-import com.example.tarea.u3.herman.vargas.R;
-import com.example.tarea.u3.herman.vargas.R.id;
-import com.example.tarea.u3.herman.vargas.R.layout;
-import com.example.tarea.u3.herman.vargas.R.menu;
+import cl.inacap.tarea.R;
+import cl.inacap.tarea.R.id;
+import cl.inacap.tarea.R.layout;
+import cl.inacap.tarea.R.menu;
 
 import android.app.Activity;
 import android.content.Intent;

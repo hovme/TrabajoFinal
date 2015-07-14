@@ -1,5 +1,5 @@
 package cl.inacap.tarea;
-import com.example.tarea.u3.herman.vargas.R;
+import cl.inacap.tarea.R;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.GoogleMap.OnMapClickListener;

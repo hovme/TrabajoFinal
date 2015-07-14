@@ -3,7 +3,7 @@ package cl.inacap.tarea;
 
 import cl.inacap.tarea.clases.BdSqlite;
 
-import com.example.tarea.u3.herman.vargas.R;
+import cl.inacap.tarea.R;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
