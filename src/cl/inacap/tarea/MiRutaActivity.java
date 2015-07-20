@@ -43,23 +43,24 @@ public class MiRutaActivity extends FragmentActivity implements OnMapClickListen
 						    .add(new LatLng(-33.385052, -70.539313))
 						    .add(new LatLng(-33.384864, -70.538804))
 						    .add(new LatLng(-33.382933, -70.535247));
+	
 	public static final PolylineOptions POLILINEA2 = new PolylineOptions()
 							.add(new LatLng(-33.380170, -70.541910))
 							.add(new LatLng(-33.380416, -70.542612))
 						    .add(new LatLng(-33.380707, -70.543288));
-	Bundle traer = getIntent().getExtras();
+	//Bundle traer = getIntent().getExtras();
 	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mi_ruta);
         setUpMapIfNeeded();
-    	String idU = traer.getString("id");
-    	if(idU.equals("1")){
+    //	String idU = traer.getString("id");
+    //	if(idU.equals("1")){
         drawPolilyne(POLILINEA);
-        }else{
-        	drawPolilyne(POLILINEA2);
-        }
+     //   }else{
+     //   	drawPolilyne(POLILINEA2);
+      //  }
     	
         //mMap = ((SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.mapa)).getMap();
         //mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(PROD_FRESCOS, 15));
@@ -121,8 +122,8 @@ public class MiRutaActivity extends FragmentActivity implements OnMapClickListen
     private void setUpMap() {
     	
     		
-	String idU = traer.getString("id");
-    	if(idU.equals("1")){
+	//String idU = traer.getString("id");
+   // 	if(idU.equals("1")){
     		mMap.addMarker(new MarkerOptions()
             .position(Almacen_1)
             .title("Tai Helao Juan")
@@ -139,9 +140,9 @@ public class MiRutaActivity extends FragmentActivity implements OnMapClickListen
             .position(Almacen_3)
             .title("La biblioteca")
             .snippet("Bar y Cabaret")
-            .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+            .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));
     		
-    	}else{
+   /* 	}else{
 		
         mMap.addMarker(new MarkerOptions()
         .position(Almacen_4)
@@ -160,7 +161,7 @@ public class MiRutaActivity extends FragmentActivity implements OnMapClickListen
         .title("Un tramite")
         .snippet("Bar y Cabaret")
         .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_GREEN)));	
-    		}
+    		}*/
     	}
 
     private void drawPolilyne(PolylineOptions options){

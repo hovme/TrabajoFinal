@@ -8,6 +8,7 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/splash_fondo"
     tools:context="cl.inacap.tarea.ResumenCajaActivity" >
 
     <TextView
@@ -30,7 +31,8 @@
 
     <Button
         android:id="@+id/btnConsultaP"
-        android:layout_width="wrap_content"
+        style="@style/btnStyleOrange"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Consultar" />
 

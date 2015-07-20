@@ -18,5 +18,9 @@
     <string name="title_activity_modificar_cliente">ModificarClienteActivity</string>
     <string name="title_activity_ubicacion">UbicacionActivity</string>
     <string name="title_activity_mi_ruta">MiRutaActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="title_activity_inicio">Productos Frescos S.A.</string>
 
 </resources>

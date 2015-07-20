@@ -8,40 +8,48 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/splash_fondo"
     tools:context="cl.inacap.tarea.MenuActivity" >
 
     <TextView
         android:id="@+id/textView1"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Menu principal"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
         android:id="@+id/btn_adminCliente"
-        android:layout_width="wrap_content"
+        style="@style/btnStyleOrange"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Administrar clientes" />
+
     <Button
         android:id="@+id/btn_entregaPedido"
-        android:layout_width="wrap_content"
+        style="@style/btnStyleOrange"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Entrega pedido" />
+
     <Button
         android:id="@+id/btn_resumenCaja"
-        android:layout_width="wrap_content"
+        style="@style/btnStyleOrange"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Resumen Caja" />
 
     <Button
         android:id="@+id/btnUbicacion"
-        android:layout_width="wrap_content"
+        style="@style/btnStyleOrange"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Donde estoy?" />
 
     <Button
         android:id="@+id/btnMiRuta"
-        android:layout_width="wrap_content"
+        style="@style/btnStyleOrange"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Mi Ruta" />
 

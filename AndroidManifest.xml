@@ -8,7 +8,7 @@
         android:minSdkVersion="16"
         android:targetSdkVersion="22" />
 
-  <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
@@ -19,66 +19,76 @@
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
-        	 
-	<uses-feature 
-	    android:glEsVersion="0x00020000" 
-	    android:required="true"/>
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
-         <uses-library android:name="com.google.android.maps" />
-        <activity
-            android:name="cl.inacap.tarea.MainActivity"
-            android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <uses-library android:name="com.google.android.maps" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
         </activity>
         <activity
-            android:name="cl.inacap.tarea.MenuActivity"
+            android:name=".MenuActivity"
             android:label="@string/title_activity_menu" >
         </activity>
         <activity
-            android:name="cl.inacap.tarea.AdminClienteActivity"
+            android:name=".AdminClienteActivity"
             android:label="@string/title_activity_admin_cliente" >
         </activity>
         <activity
-            android:name="cl.inacap.tarea.EntregaPedidoActivity"
+            android:name=".EntregaPedidoActivity"
             android:label="@string/title_activity_entrega_pedido" >
         </activity>
         <activity
-            android:name="cl.inacap.tarea.ResumenCajaActivity"
+            android:name=".ResumenCajaActivity"
             android:label="@string/title_activity_resumen_caja" >
         </activity>
         <activity
-            android:name="cl.inacap.tarea.AgregarClienteActivity"
+            android:name=".AgregarClienteActivity"
             android:label="@string/title_activity_agregar_cliente" >
         </activity>
         <activity
-            android:name="cl.inacap.tarea.ModificarClienteActivity"
+            android:name=".ModificarClienteActivity"
             android:label="@string/title_activity_modificar_cliente" >
         </activity>
         <activity
-            android:name="cl.inacap.tarea.UbicacionActivity"
+            android:name=".UbicacionActivity"
             android:label="@string/title_activity_ubicacion" >
         </activity>
         <activity
-            android:name="cl.inacap.tarea.MiRutaActivity"
+            android:name=".MiRutaActivity"
             android:label="@string/title_activity_mi_ruta" >
         </activity>
+
         <meta-data
             android:name="com.google.android.gms.version"
             android:value="@integer/google_play_services_version" />
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAqRdeTPcOkV-UUm19EguOLQrpHPq8oh5M" />
-     
-        
+
+        <activity
+            android:name=".SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_splash"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name=".InicioActivity"
+            android:label="@string/title_activity_inicio" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

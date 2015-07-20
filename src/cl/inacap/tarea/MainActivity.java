@@ -27,7 +27,7 @@ public class MainActivity extends Activity {
 	private MiTareaAsincronaDialog tarea2;
 	private ProgressDialog pDialog;
 	final BdSqlite conn = new BdSqlite(MainActivity.this);
-	private String idU =null; 
+	public static String idU =null; 
 	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
