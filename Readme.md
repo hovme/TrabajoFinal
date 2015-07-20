@@ -1,4 +1,4 @@
-Actividad 16 – Trabajo sumativo: Desarrollo de una aplicación móvil avanzada en Android
+Actividad 18 – Tarea sumativa: Mejorando el “look and feel” de la aplicación
 ASIGNATURA: Programación de aplicaciones móviles en Android
 PROFESOR: Cristián Correa.
 ESTUDIANTE: Herman Vargas Mena
