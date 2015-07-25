@@ -19,8 +19,6 @@
     <string name="title_activity_ubicacion">UbicacionActivity</string>
     <string name="title_activity_mi_ruta">MiRutaActivity</string>
     <string name="title_activity_splash">SplashActivity</string>
-    <string name="dummy_button">Dummy Button</string>
-    <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_inicio">Productos Frescos S.A.</string>
     <!-- Vista login -->
     <string name="titulo_login">Bienvenidos: acceso usuario</string>
@@ -31,7 +29,40 @@
 	<string name="titulo_menu">Menu principal</string>
 	<string name="btn_admin_clien_menu">Administrar clientes</string>
 	<string name="btn_entre_pedi_menu">Entrega pedido</string>
+	<string name="btn_resum_caja_menu">Resúmen Caja</string>
+	<string name="btn_donde_menu">Dónde estoy?</string>
+	<string name="btn_mi_ruta_menu">Mi Ruta</string>
+	<!--  Vista admin cliente -->
+    <string name="titulo_admin_cliente">Administrador de clientes</string>
+    <string name="btn_agregar_admin_cliente">Agregar cliente</string>
+	<!-- Vista agregar Cliente -->
+	<string name="titulo_agreg_cliente">Agregar Cliente</string>
+	<string name="id_agreg_cliente">Id Cliente</string>
+    <string name="nombre_agreg_cliente">Nombre</string>
+    <string name="empresa_agreg_cliente">Id Cliente</string>
+    <string name="btn_agreg_cliente">Agregar cliente</string>
+    <!-- Vista Entrega de pedidos -->
+    <string name="titulo_entr_pedi">Registro entrega de pedidos</string>
+    <string name="cliente_entr_pedi">Cliente</string>
+    <string name="producto_entr_pedi">Producto</string>
+    <string name="cantidad_entr_pedi">Cantidad</string>
+    <string name="fecha_entr_pedi">Fecha entrega</string>
+	<string name="precio_entr_pedi">Precio</string>
+	<string name="btn_registro_entr_pedi">Registrar</string>
+	<!-- Vista modificar Cliente -->
+	<string name="titulo_mod_cliente">Modificar cliente</string>
+	<string name="id_mod_cliente">Id Cliente</string>
+	<string name="nombre_mod_cliente">Nombre</string>
+	<string name="empresa_mod_cliente">Empresa</string>
+	<string name="btn_modif_mod_cliente">Modificar Cliente</string>
+	<string name="btn_elim_mod_cliente">Eliminar Cliente</string>
+	<!-- Vista Resúmen Caja -->
+	<string name="titulo_resum_caja">Resumen caja</string>
+	<string name="producto_resum_caja">Producto</string>
+	<string name="btn_consul_resum_caja">Consultar</string>
+	<!-- Vista ubicacion -->
+	<string name="titulo_ubica">Ubicación...</string>
+	
 	
     
-
 </resources>

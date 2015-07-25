@@ -37,20 +37,20 @@
         style="@style/btnStyleOrange"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Resumen Caja" />
+        android:text="@string/btn_resum_caja_menu" />
 
     <Button
         android:id="@+id/btnUbicacion"
         style="@style/btnStyleOrange"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Donde estoy?" />
+        android:text="@string/btn_donde_menu" />
 
     <Button
         android:id="@+id/btnMiRuta"
         style="@style/btnStyleOrange"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Mi Ruta" />
+        android:text="@string/btn_mi_ruta_menu" />
 
 </LinearLayout>

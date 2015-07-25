@@ -13,6 +13,6 @@
         android:id="@+id/locationText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ubicacion..." />
+        android:text="@string/titulo_ubica" />
 
 </RelativeLayout>

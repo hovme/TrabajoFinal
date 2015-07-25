@@ -446,6 +446,8 @@ containing a value of this type.
          (such as screen margins) for screens with more than 820dp of available width. This
          would include 7" and 10" devices in landscape (~960dp and ~1280dp respectively).
     
+ Default screen margins, per the Android Design guidelines. 
+ Default screen margins, per the Android Design guidelines. 
          */
         public static final int activity_horizontal_margin=0x7f0a0000;
         public static final int activity_vertical_margin=0x7f0a0001;
@@ -616,9 +618,19 @@ containing a value of this type.
         /**  Brand name for Google [DO NOT TRANSLATE] 
          */
         public static final int auth_google_play_services_client_google_display_name=0x7f060006;
-        public static final int btn_admin_clien_menu=0x7f060046;
-        public static final int btn_entre_pedi_menu=0x7f060047;
-        public static final int btn_login=0x7f060044;
+        public static final int btn_admin_clien_menu=0x7f060044;
+        public static final int btn_agreg_cliente=0x7f06004f;
+        public static final int btn_agregar_admin_cliente=0x7f06004a;
+        public static final int btn_consul_resum_caja=0x7f06005f;
+        public static final int btn_donde_menu=0x7f060047;
+        public static final int btn_elim_mod_cliente=0x7f06005c;
+        public static final int btn_entre_pedi_menu=0x7f060045;
+        public static final int btn_login=0x7f060042;
+        public static final int btn_mi_ruta_menu=0x7f060048;
+        public static final int btn_modif_mod_cliente=0x7f06005b;
+        public static final int btn_registro_entr_pedi=0x7f060056;
+        public static final int btn_resum_caja_menu=0x7f060046;
+        public static final int cantidad_entr_pedi=0x7f060053;
         /**  Message of the notification to indicate an active cast display connection.  [CHAR LIMIT=80] NOTE: Same text as msgid="794424023757290105" 
          */
         public static final int cast_notification_connected_message=0x7f060009;
@@ -628,6 +640,7 @@ containing a value of this type.
         /**  Label of a button to disconnect an active cast display connection.  [CHAR LIMIT=25] NOTE: Same text as msgid="9024230238785261495" 
          */
         public static final int cast_notification_disconnect=0x7f06000a;
+        public static final int cliente_entr_pedi=0x7f060051;
         /**   Text for notification shown when the Android Wear apps needs to be updated. Only shown on the wearable. [CHAR LIMIT=NONE] 
          */
         public static final int common_android_wear_notification_needs_update_text=0x7f06000d;
@@ -743,18 +756,28 @@ containing a value of this type.
         public static final int create_calendar_message=0x7f060005;
         public static final int create_calendar_title=0x7f060004;
         public static final int decline=0x7f060003;
-        public static final int dummy_button=0x7f06003e;
-        public static final int dummy_content=0x7f06003f;
+        public static final int dummy_button=0x7f060061;
+        public static final int dummy_content=0x7f060062;
+        public static final int empresa_agreg_cliente=0x7f06004e;
+        public static final int empresa_mod_cliente=0x7f06005a;
+        public static final int fecha_entr_pedi=0x7f060054;
         public static final int hello_world=0x7f06002d;
+        public static final int id_agreg_cliente=0x7f06004c;
+        public static final int id_mod_cliente=0x7f060058;
         public static final int navigation_drawer_close=0x7f060034;
         public static final int navigation_drawer_open=0x7f060033;
-        public static final int password_login=0x7f060043;
+        public static final int nombre_agreg_cliente=0x7f06004d;
+        public static final int nombre_mod_cliente=0x7f060059;
+        public static final int password_login=0x7f060041;
+        public static final int precio_entr_pedi=0x7f060055;
+        public static final int producto_entr_pedi=0x7f060052;
+        public static final int producto_resum_caja=0x7f06005e;
         public static final int store_picture_message=0x7f060001;
         public static final int store_picture_title=0x7f060000;
         public static final int title_activity_admin_cliente=0x7f060036;
         public static final int title_activity_agregar_cliente=0x7f060039;
         public static final int title_activity_entrega_pedido=0x7f060037;
-        public static final int title_activity_inicio=0x7f060040;
+        public static final int title_activity_inicio=0x7f06003e;
         public static final int title_activity_menu=0x7f06002f;
         public static final int title_activity_mi_ruta=0x7f06003c;
         public static final int title_activity_modificar_cliente=0x7f06003a;
@@ -764,13 +787,47 @@ containing a value of this type.
         public static final int title_section1=0x7f060030;
         public static final int title_section2=0x7f060031;
         public static final int title_section3=0x7f060032;
+        /**   Vista admin cliente 
+  Vista admin cliente 
+  Vista admin cliente 
+         */
+        public static final int titulo_admin_cliente=0x7f060049;
+        /**  Vista agregar Cliente 
+ Vista agregar Cliente 
+ Vista agregar Cliente 
+         */
+        public static final int titulo_agreg_cliente=0x7f06004b;
+        /**  Vista Entrega de pedidos 
+ Vista Entrega de pedidos 
+ Vista Entrega de pedidos 
+         */
+        public static final int titulo_entr_pedi=0x7f060050;
         /**  Vista login 
+ Vista login 
+ Vista login 
          */
-        public static final int titulo_login=0x7f060041;
+        public static final int titulo_login=0x7f06003f;
         /**  Vista menu 
+ Vista menu 
+ Vista menu 
          */
-        public static final int titulo_menu=0x7f060045;
-        public static final int usuario_login=0x7f060042;
+        public static final int titulo_menu=0x7f060043;
+        /**  Vista modificar Cliente 
+ Vista modificar Cliente 
+ Vista modificar Cliente 
+         */
+        public static final int titulo_mod_cliente=0x7f060057;
+        /**  Vista Resúmen Caja 
+ Vista Resúmen Caja 
+ Vista Resúmen Caja 
+         */
+        public static final int titulo_resum_caja=0x7f06005d;
+        /**  Vista ubicacion 
+ Vista ubicacion 
+ Vista ubicacion 
+         */
+        public static final int titulo_ubica=0x7f060060;
+        public static final int usuario_login=0x7f060040;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
          */
@@ -797,9 +854,31 @@ containing a value of this type.
         res/values-v11/styles.xml on API 14+ devices.
     
  API 14 theme customizations can go here. 
+
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
+
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    
+
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        
          */
         public static final int AppBaseTheme=0x7f050005;
         /**  Application theme. 
+ All customizations that are NOT specific to a particular API-level can go here. 
+ Application theme. 
+ All customizations that are NOT specific to a particular API-level can go here. 
+ Application theme. 
  All customizations that are NOT specific to a particular API-level can go here. 
          */
         public static final int AppTheme=0x7f050006;

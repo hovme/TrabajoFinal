@@ -15,14 +15,14 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Agregar Cliente"
+        android:text="@string/titulo_agreg_cliente"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Id Cliente" />
+        android:text="@string/id_agreg_cliente" />
   <EditText
         android:id="@+id/cliente_id"
         android:layout_width="match_parent"
@@ -34,7 +34,7 @@
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nombre" />
+        android:text="@string/nombre_agreg_cliente" />
 
     <EditText
         android:id="@+id/cliente_nombre"
@@ -47,7 +47,7 @@
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Empresa" />
+        android:text="@string/empresa_agreg_cliente" />
 
     <EditText
         android:id="@+id/cliente_empresa"
@@ -60,6 +60,6 @@
         style="@style/btnStyleOrange"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Agregar Cliente" />
+        android:text="@string/btn_agreg_cliente" />
 
 </LinearLayout>

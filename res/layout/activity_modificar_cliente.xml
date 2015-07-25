@@ -17,14 +17,14 @@
             android:id="@+id/tvModificar"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Modificar Cliente"
+            android:text="@string/titulo_mod_cliente"
             android:textAppearance="?android:attr/textAppearanceLarge" />
 
         <TextView
             android:id="@+id/tvIdCliente"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Id Cliente" />
+            android:text="@string/id_mod_cliente" />
 
         <EditText
             android:id="@+id/etCliente_id"
@@ -40,7 +40,7 @@
             android:id="@+id/tvNombre"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Nombre" />
+            android:text="@string/nombre_mod_cliente" />
 
         <EditText
             android:id="@+id/etCliente_nombre"
@@ -54,7 +54,7 @@
             android:id="@+id/tvEmpresa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Empresa" />
+            android:text="@string/empresa_mod_cliente" />
 
         <EditText
             android:id="@+id/etCliente_empresa"
@@ -67,14 +67,14 @@
             style="@style/btnStyleOrange"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Modificar Cliente" />
+            android:text="@string/btn_modif_mod_cliente" />
 
         <Button
             android:id="@+id/btn_eliminarCli"
             style="@style/btnStyleOrange"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Eliminar Cliente" />
+            android:text="@string/btn_elim_mod_cliente" />
 
     </LinearLayout>
 

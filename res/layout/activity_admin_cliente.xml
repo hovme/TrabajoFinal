@@ -15,7 +15,7 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Administrador de clientes"
+        android:text="@string/titulo_admin_cliente"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
@@ -23,7 +23,7 @@
         style="@style/btnStyleOrange"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Agregar cliente" />
+        android:text="@string/btn_agregar_admin_cliente" />
 
     <ListView
         android:id="@+id/lv_listado"
