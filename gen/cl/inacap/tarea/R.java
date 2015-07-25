@@ -616,6 +616,9 @@ containing a value of this type.
         /**  Brand name for Google [DO NOT TRANSLATE] 
          */
         public static final int auth_google_play_services_client_google_display_name=0x7f060006;
+        public static final int btn_admin_clien_menu=0x7f060046;
+        public static final int btn_entre_pedi_menu=0x7f060047;
+        public static final int btn_login=0x7f060044;
         /**  Message of the notification to indicate an active cast display connection.  [CHAR LIMIT=80] NOTE: Same text as msgid="794424023757290105" 
          */
         public static final int cast_notification_connected_message=0x7f060009;
@@ -745,6 +748,7 @@ containing a value of this type.
         public static final int hello_world=0x7f06002d;
         public static final int navigation_drawer_close=0x7f060034;
         public static final int navigation_drawer_open=0x7f060033;
+        public static final int password_login=0x7f060043;
         public static final int store_picture_message=0x7f060001;
         public static final int store_picture_title=0x7f060000;
         public static final int title_activity_admin_cliente=0x7f060036;
@@ -760,6 +764,13 @@ containing a value of this type.
         public static final int title_section1=0x7f060030;
         public static final int title_section2=0x7f060031;
         public static final int title_section3=0x7f060032;
+        /**  Vista login 
+         */
+        public static final int titulo_login=0x7f060041;
+        /**  Vista menu 
+         */
+        public static final int titulo_menu=0x7f060045;
+        public static final int usuario_login=0x7f060042;
         /**  Text on a placeholder buy button when Google Play services is not
          available or up-to-date 
          */

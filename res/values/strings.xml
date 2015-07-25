@@ -22,5 +22,16 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_inicio">Productos Frescos S.A.</string>
+    <!-- Vista login -->
+    <string name="titulo_login">Bienvenidos: acceso usuario</string>
+    <string name="usuario_login">Usuario</string>
+    <string name="password_login">Contraseña</string>
+    <string name="btn_login">Conectar</string>
+    <!-- Vista menu -->
+	<string name="titulo_menu">Menu principal</string>
+	<string name="btn_admin_clien_menu">Administrar clientes</string>
+	<string name="btn_entre_pedi_menu">Entrega pedido</string>
+	
+    
 
 </resources>

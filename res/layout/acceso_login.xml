@@ -15,14 +15,14 @@
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bienvenidos: acceso usuario"
+        android:text="@string/titulo_login"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <TextView
         android:id="@+id/tvUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Usuario" />
+        android:text="@string/usuario_login" />
 
     <EditText
         android:id="@+id/etUsuario"
@@ -37,7 +37,7 @@
         android:id="@+id/tvContrasena"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Contraseña" />
+        android:text="@string/password_login" />
 
     <EditText
         android:id="@+id/etContrasena"
@@ -50,6 +50,6 @@
         style="@style/btnStyleOrange"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Conectar" />
+        android:text="@string/btn_login" />
 
 </LinearLayout>

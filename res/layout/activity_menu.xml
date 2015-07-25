@@ -15,7 +15,7 @@
         android:id="@+id/textView1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Menu principal"
+        android:text="@string/titulo_menu"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Button
@@ -23,14 +23,14 @@
         style="@style/btnStyleOrange"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Administrar clientes" />
+        android:text="@string/btn_admin_clien_menu" />
 
     <Button
         android:id="@+id/btn_entregaPedido"
         style="@style/btnStyleOrange"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Entrega pedido" />
+        android:text="@string/btn_entre_pedi_menu" />
 
     <Button
         android:id="@+id/btn_resumenCaja"
