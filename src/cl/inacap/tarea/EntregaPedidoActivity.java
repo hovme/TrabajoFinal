@@ -1,27 +1,37 @@
 package cl.inacap.tarea;
 
-import cl.inacap.tarea.clases.BdSqlite;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Locale;
 
+import cl.inacap.tarea.clases.BdSqlite;
 import cl.inacap.tarea.R;
 import cl.inacap.tarea.R.id;
 import cl.inacap.tarea.R.layout;
 import cl.inacap.tarea.R.menu;
-
 import android.app.Activity;
+import android.app.DatePickerDialog;
+import android.app.DatePickerDialog.OnDateSetListener;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.InputType;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 public class EntregaPedidoActivity extends Activity {
 
+	EditText etFecha;
+	private DatePickerDialog fecha2;	
+	private SimpleDateFormat formatoFecha;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -33,6 +43,15 @@ public class EntregaPedidoActivity extends Activity {
 		final EditText etFecha = (EditText)findViewById(R.id.etEnFecha);
 		final EditText etPrecio = (EditText)findViewById(R.id.etEnPrecio);
 		Button btn_registro = (Button)findViewById(R.id.btnRegistrarEntrega);
+		etFecha.setInputType(InputType.TYPE_NULL);
+		etFecha.requestFocus();
+		
+
+		//setDateTimeField();
+
+		
+		
+	
 		
 		String []productos={"Arroz","Azucar","Fideos","Sal","Aceite"};
 		
@@ -71,8 +90,48 @@ public class EntregaPedidoActivity extends Activity {
 				EntregaPedidoActivity.this.startActivity(volver);
 			}
 		});
+			
+			formatoFecha = new SimpleDateFormat("dd-MM-yyyy", Locale.US);
+			Calendar newCalendar = Calendar.getInstance();
+			fecha2 = new DatePickerDialog(this, new OnDateSetListener() {
+
+		        public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+		            Calendar newDate = Calendar.getInstance();
+		            newDate.set(year, monthOfYear, dayOfMonth);
+		            etFecha.setText(formatoFecha.format(newDate.getTime()));
+		        }
+
+		    },newCalendar.get(Calendar.YEAR), newCalendar.get(Calendar.MONTH), newCalendar.get(Calendar.DAY_OF_MONTH));
+			
+			
+			etFecha.setOnClickListener(new OnClickListener() {
+				
+				@Override
+				public void onClick(View v) {
+					// TODO Auto-generated method stub
+					fecha2.show();
+				}
+			});
 	}
 
+	
+	private void setDateTimeField() {
+		//etFecha.setOnClickListener(this);
+		formatoFecha = new SimpleDateFormat("dd-MM-yyyy", Locale.US);
+		Calendar newCalendar = Calendar.getInstance();
+		fecha2 = new DatePickerDialog(this, new OnDateSetListener() {
+
+	        public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
+	            Calendar newDate = Calendar.getInstance();
+	            newDate.set(year, monthOfYear, dayOfMonth);
+	            etFecha.setText(formatoFecha.format(newDate.getTime()));
+	        }
+
+	    },newCalendar.get(Calendar.YEAR), newCalendar.get(Calendar.MONTH), newCalendar.get(Calendar.DAY_OF_MONTH));
+		
+		
+	}
+	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 		// Inflate the menu; this adds items to the action bar if it is present.
@@ -91,4 +150,6 @@ public class EntregaPedidoActivity extends Activity {
 		}
 		return super.onOptionsItemSelected(item);
 	}
+
+
 }

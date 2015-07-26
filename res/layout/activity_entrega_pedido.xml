@@ -55,22 +55,24 @@
         android:id="@+id/etEnCantidad"
         android:layout_width="117dp"
         android:layout_height="wrap_content"
-        android:ems="10" />
+        android:ems="10"
+        android:inputType="number"
+        android:singleLine="true" />
 
     <TextView
         android:id="@+id/textView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/fecha_entr_pedi"
-        android:ems="10"
-        android:inputType="number" />
+        android:ems="10" />
 
     <EditText
         android:id="@+id/etEnFecha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:ems="10"
-        android:inputType="date" />
+        android:hint="@string/btn_fecha"
+        android:singleLine="true" />
 
     <TextView
         android:id="@+id/textView6"
