@@ -92,6 +92,8 @@ public class EntregaPedidoActivity extends Activity {
 				EntregaPedidoActivity.this.startActivity(volver);
 			}
 		});
+			
+			
 			if(String.valueOf(Locale.getISOCountries())=="US"){
 				formatoFecha = new SimpleDateFormat("MM-dd-yyyy", Locale.US);
 			}else{
@@ -116,27 +118,12 @@ public class EntregaPedidoActivity extends Activity {
 				public void onClick(View v) {
 					// TODO Auto-generated method stub
 					fecha2.show();
+					//Toast.makeText(EntregaPedidoActivity.this,Locale.getDefault(),Toast.LENGTH_SHORT).show();	
+
 				}
 			});
 	}
 
-	
-	private void setDateTimeField() {
-		//etFecha.setOnClickListener(this);
-		formatoFecha = new SimpleDateFormat("dd-MM-yyyy", Locale.US);
-		Calendar newCalendar = Calendar.getInstance();
-		fecha2 = new DatePickerDialog(this, new OnDateSetListener() {
-
-	        public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-	            Calendar newDate = Calendar.getInstance();
-	            newDate.set(year, monthOfYear, dayOfMonth);
-	            etFecha.setText(formatoFecha.format(newDate.getTime()));
-	        }
-
-	    },newCalendar.get(Calendar.YEAR), newCalendar.get(Calendar.MONTH), newCalendar.get(Calendar.DAY_OF_MONTH));
-		
-		
-	}
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
