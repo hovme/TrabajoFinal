@@ -1,5 +1,6 @@
 package cl.inacap.tarea;
 
+import java.text.NumberFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Locale;
@@ -49,7 +50,8 @@ public class EntregaPedidoActivity extends Activity {
 
 		//setDateTimeField();
 
-		
+		//final NumberFormat nf_es = NumberFormat.getCurrencyInstance();
+		//etPrecio.setText(nf_es.format(value));
 		
 	
 		
@@ -90,8 +92,12 @@ public class EntregaPedidoActivity extends Activity {
 				EntregaPedidoActivity.this.startActivity(volver);
 			}
 		});
-			
-			formatoFecha = new SimpleDateFormat("dd-MM-yyyy", Locale.US);
+			if(String.valueOf(Locale.getISOCountries())=="US"){
+				formatoFecha = new SimpleDateFormat("MM-dd-yyyy", Locale.US);
+			}else{
+				formatoFecha = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault());
+			}
+			//formatoFecha = new SimpleDateFormat("MM-dd-yyyy", Locale.getDefault());
 			Calendar newCalendar = Calendar.getInstance();
 			fecha2 = new DatePickerDialog(this, new OnDateSetListener() {
 

@@ -1,5 +1,6 @@
 package cl.inacap.tarea.clases;
 
+import java.text.NumberFormat;
 import java.util.ArrayList;
 
 import android.content.ContentValues;
@@ -115,16 +116,20 @@ public class BdSqlite {
 	 }
 	 public String consultarPedidos(String producto)
 		{
+		 final NumberFormat nf_es = NumberFormat.getCurrencyInstance();
 		 Cursor saldo = db.rawQuery(
 	                "select count(cantidad) from pedido where producto=" +"'"+ producto+"'", null);
 		 Cursor totalEntrega = db.rawQuery(
 	                "select count(*) from pedido where producto=" +"'"+ producto+"'", null);
 		 Cursor totalPedido = db.rawQuery(
 	                "select * from pedido where producto=" +"'"+ producto+"'", null);
+		 Cursor totalVenta = db.rawQuery(
+	                "select sum(precio) from pedido where producto=" +"'"+ producto+"'", null);
 		 
 		 String item1 = "";
 		 String item2 = "";
 		 String item3 = "";
+		 String item4 = "";
 		 
 		 if (saldo.moveToFirst()) {
 			 item1 += " El saldo es: "+saldo.getString(0) +"\r\n"; 
@@ -141,8 +146,16 @@ public class BdSqlite {
 	        } else{
 	        	return null;
 	        }
-		 
-		 return item1+item2+item3;
+		 if (totalVenta.moveToFirst()) {
+			 
+			 int totalV= Integer.parseInt(totalVenta.getString(0));
+			 String stotalV= String.valueOf(nf_es.format(totalV));
+			 
+			 item4 += " El total de venta es: "+stotalV +"\r\n";
+	        } else{
+	        	return null;
+	        }		 
+		 return item1+item2+item3+item4;
 		}
 	
 }

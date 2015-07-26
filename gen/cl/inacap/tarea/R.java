@@ -625,7 +625,7 @@ containing a value of this type.
         public static final int btn_donde_menu=0x7f060047;
         public static final int btn_elim_mod_cliente=0x7f06005c;
         public static final int btn_entre_pedi_menu=0x7f060045;
-        public static final int btn_fecha=0x7f060063;
+        public static final int btn_fecha=0x7f060061;
         public static final int btn_login=0x7f060042;
         public static final int btn_mi_ruta_menu=0x7f060048;
         public static final int btn_modif_mod_cliente=0x7f06005b;
@@ -757,8 +757,8 @@ containing a value of this type.
         public static final int create_calendar_message=0x7f060005;
         public static final int create_calendar_title=0x7f060004;
         public static final int decline=0x7f060003;
-        public static final int dummy_button=0x7f060061;
-        public static final int dummy_content=0x7f060062;
+        public static final int dummy_button=0x7f060062;
+        public static final int dummy_content=0x7f060063;
         public static final int empresa_agreg_cliente=0x7f06004e;
         public static final int empresa_mod_cliente=0x7f06005a;
         public static final int fecha_entr_pedi=0x7f060054;
