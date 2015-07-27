@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Productos Frescos S.A.</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_menu">MenuActivity</string>
+    <string name="title_section1">Management Customer</string>
+    <string name="title_section2">Delivery</string>
+    <string name="title_section3">Summary acount</string>
+    <string name="navigation_drawer_open">Abrir menu</string>
+    <string name="navigation_drawer_close">Cerrar Menu</string>
+    <string name="accion">Example action</string>
+    <string name="title_activity_admin_cliente">AdminClienteActivity</string>
+    <string name="title_activity_entrega_pedido">EntregaPedidoActivity</string>
+    <string name="title_activity_resumen_caja">ResumenCajaActivity</string>
+    <string name="title_activity_agregar_cliente">AgregarClienteActivity</string>
+    <string name="title_activity_modificar_cliente">ModificarClienteActivity</string>
+    <string name="title_activity_ubicacion">UbicacionActivity</string>
+    <string name="title_activity_mi_ruta">MiRutaActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_inicio">Productos Frescos S.A.</string>
+    <!-- Vista login -->
+    <string name="titulo_login">Welcome: user access</string>
+    <string name="usuario_login">User</string>
+    <string name="password_login">Password</string>
+    <string name="btn_login">Conect</string>
+    <!-- Vista menu -->
+	<string name="titulo_menu">Main Menu</string>
+	<string name="btn_admin_clien_menu">Mannagement customer</string>
+	<string name="btn_entre_pedi_menu">Delivery</string>
+	<string name="btn_resum_caja_menu">summary acount</string>
+	<string name="btn_donde_menu">Where is me?</string>
+	<string name="btn_mi_ruta_menu">My Route</string>
+	<!--  Vista admin cliente -->
+    <string name="titulo_admin_cliente">Mannagement of customer</string>
+    <string name="btn_agregar_admin_cliente">Add Client</string>
+	<!-- Vista agregar Cliente -->
+	<string name="titulo_agreg_cliente">Add Client</string>
+	<string name="id_agreg_cliente">Id Client</string>
+    <string name="nombre_agreg_cliente">Name</string>
+    <string name="empresa_agreg_cliente">Id Client</string>
+    <string name="btn_agreg_cliente">Add client</string>
+    <!-- Vista Entrega de pedidos -->
+    <string name="titulo_entr_pedi">Register delivery</string>
+    <string name="cliente_entr_pedi">Client</string>
+    <string name="producto_entr_pedi">Product</string>
+    <string name="cantidad_entr_pedi">Quantity</string>
+    <string name="fecha_entr_pedi">Date delivery</string>
+	<string name="precio_entr_pedi">Price</string>
+	<string name="btn_registro_entr_pedi">Register</string>
+	<string name="btn_fecha">Click to enter date</string>
+	<!-- Vista modificar Cliente -->
+	<string name="titulo_mod_cliente">Edit client</string>
+	<string name="id_mod_cliente">Id Client</string>
+	<string name="nombre_mod_cliente">Name</string>
+	<string name="empresa_mod_cliente">Enterprice</string>
+	<string name="btn_modif_mod_cliente">Edit Client</string>
+	<string name="btn_elim_mod_cliente">Delete Client</string>
+	<!-- Vista Resúmen Caja -->
+	<string name="titulo_resum_caja">Summary account</string>
+	<string name="producto_resum_caja">Product</string>
+	<string name="btn_consul_resum_caja">Search</string>
+	<!-- Vista ubicacion -->
+	<string name="titulo_ubica">Location...</string>
+	
+	
+    
+</resources>
